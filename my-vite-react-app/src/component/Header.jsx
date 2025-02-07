@@ -1,8 +1,6 @@
 import React from "react";
 import "./Header.css";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSearch} from '@fortawesome/free-solid-svg-icons';
-import {faMicrophone} from '@fortawesome/free-solid-svg-icons';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 
@@ -18,11 +16,17 @@ const Header = () => {
           <a href="#">EN ▾</a>
           <a href="#">We are Hiring</a>
           <a href="#">Investor Relations</a>
-          <a href="#">Leads</a>
-          <a href="#">Advertise</a>
+          <a href="#"></a>
+          <a href="#"><i className="fas fa-envelope"></i>Leads</a>
+          <a href="#"> <i className="fas fa-bullhorn"></i>Advertise</a>
+
+          <div className="business-container">
           <a href="#" className="business">BUSINESS</a>
-          <a href="#">Free Listing</a>
-          <button className="login-btn">Login / Sign Up</button>
+          <a href="#"><i className="fas fa-chart-line"></i>Free Listing</a>
+          </div>
+          <i className="fas fa-bell"></i>
+          <button className="login-btn">
+           Login / Sign Up</button>
         </nav>
       </div>
 
@@ -31,15 +35,9 @@ const Header = () => {
         <div className="search-box">
           <input type="text" placeholder="📍 Betkuli, Karwar" className="location-input" />
           <input type="text" placeholder="Search in Karwar" className="search-input" />
-          <button>
-            <FontAwesomeIcon icon={faSearch} />
-            </button>
-
-            
-          <button>
-            <FontAwesomeIcon icon={faMicrophone} />
-          </button>
-
+        
+            <i className="fas fa-microphone mic-icon"></i>
+            <button className="search-btn"><i className="fas fa-search"></i>   </button>
       
 
        
