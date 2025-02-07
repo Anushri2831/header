@@ -1,5 +1,11 @@
 import React from "react";
 import "./Header.css";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
+import {faMicrophone} from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 const Header = () => {
   return (
@@ -25,6 +31,18 @@ const Header = () => {
         <div className="search-box">
           <input type="text" placeholder="📍 Betkuli, Karwar" className="location-input" />
           <input type="text" placeholder="Search in Karwar" className="search-input" />
+          <button>
+            <FontAwesomeIcon icon={faSearch} />
+            </button>
+
+            
+          <button>
+            <FontAwesomeIcon icon={faMicrophone} />
+          </button>
+
+      
+
+       
           
         </div>
       </div>
