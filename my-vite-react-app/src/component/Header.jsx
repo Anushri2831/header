@@ -7,6 +7,7 @@ import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 const Header = () => {
   return (
     <header className="header">
@@ -45,7 +46,9 @@ const Header = () => {
           <div className="Search-input">
           
      
-          <input type="text" placeholder="Search in Karwar" className="search-input" />  
+          <input type="text" placeholder="Search in Karwar" className="search-input" />
+      
+         
           
      
           </div>

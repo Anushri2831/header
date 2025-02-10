@@ -34,6 +34,7 @@
     text-decoration: none;
     color: black;
     font-size: 14px;
+    font-weight: bold;
   }
   
   .business {
@@ -164,9 +165,3 @@
   height:40px;
 }
 
-
-.search-input{
-  position: relative;
-  display: flex;
-  align-items: center;
-}
