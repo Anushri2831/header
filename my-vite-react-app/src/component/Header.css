@@ -135,3 +135,31 @@
     margin-top:10px;
     
   }
+
+ .download-option{
+  display:flex;
+  
+  justify-content: right;
+  position: relative;
+ }
+
+ .download-option button{
+  position: absolute;
+  top:0;
+  
+ }
+
+.download-option .down{
+  margin-right: 18px;
+  right:1px;
+  font-size: small;
+  
+}
+
+.download-option .download-arrow{
+  transform:scale(1.1);
+  right:1px;
+  display:flex;
+  flex-direction: column;
+  height:40px;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -13,7 +15,7 @@ const Header = () => {
           <span className="blue">Just</span><span className="orange">dial</span>
         </div>
         <nav className="nav-links">
-          <a href="#">EN ▾</a>
+          <a href="#" style={{color:'blue'}}><i className="fas fa-comments"></i>EN ▾</a>
           <a href="#">We are Hiring</a>
           <a href="#">Investor Relations</a>
           <a href="#"></a>
@@ -30,10 +32,16 @@ const Header = () => {
         </nav>
       </div>
 
+      <div className="download-option">
+        <button className="down">Download App </button>
+        <button className="download-arrow"><i className="fas fa-minus"></i><i className="fas fa-arrow-down"></i></button>
+      </div>
+
       <div className="search-bar">
         <h2>Search across ‘4.7 Crore+’ <span className="highlight">Businesses</span></h2>
         <div className="search-box">
-          <input type="text" placeholder="📍 Betkuli, Karwar" className="location-input" />
+          <input type="text" placeholder=" Betkuli, Karwar" className="location-input" />
+      
           <input type="text" placeholder="Search in Karwar" className="search-input" />
         
             <i className="fas fa-microphone mic-icon"></i>
@@ -45,9 +53,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="download-app">
-        <button>Download App ⬇</button>
-      </div>
+     
     </header>
   );
 };
