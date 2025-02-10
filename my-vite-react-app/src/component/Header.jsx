@@ -40,16 +40,16 @@ const Header = () => {
       <div className="search-bar">
         <h2>Search across ‘4.7 Crore+’ <span className="highlight">Businesses</span></h2>
         <div className="search-box">
-          <input type="text" placeholder=" Betkuli, Karwar" className="location-input" />
-      
-          <input type="text" placeholder="Search in Karwar" className="search-input" />
-        
-            <i className="fas fa-microphone mic-icon"></i>
-            <button className="search-btn"><i className="fas fa-search"></i>   </button>
-      
+          <input type="text"placeholder=" Betkuli, Karwar" className="location-input" style={{background:'#f0f0f0'}}  />
 
-       
+          <div className="Search-input">
           
+     
+          <input type="text" placeholder="Search in Karwar" className="search-input" />  
+          
+     
+          </div>
+         
         </div>
       </div>
 
